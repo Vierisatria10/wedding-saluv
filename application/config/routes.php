@@ -71,3 +71,6 @@ $route['User'] = 'User/gantipassword';
 
 // akad
 $route['Akad'] = 'Akad/index';
+
+// menu
+$route['Menu'] = 'Menu/index';
