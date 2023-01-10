@@ -43,7 +43,7 @@
                                             <tr>
                                                 <td><?= $no++; ?></td>
                                                 <td><?= $value->nama ?></td>
-                                                <td><?= $value->title ?></td>
+                                                 <td><?= $value->title ?></td>
                                                 <td><?= $value->deskripsi ?></td>
                                                 <td><a href="javascript:void(0);"><strong><?= $value->no_rek ?></strong></a></td>
                                                 <td><a href="javascript:void(0);"><strong><?= $value->no_hp ?></strong></a></td>

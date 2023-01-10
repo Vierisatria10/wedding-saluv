@@ -53,24 +53,25 @@ $route['default_controller'] = 'Login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// Dashboard
-$route['Dashboard'] = 'Dashboard/index';
+// // Dashboard
+// $route['Dashboard'] = 'Dashboard/index';
 
-// Gift
-$route['Gift'] = 'Gift/index';
-$route['Gift/tambah_gift'] = 'Gift/tambah_gift';
+// // Gift
+// $route['Gift'] = 'Gift/index';
+// $route['Gift/tambah_gift'] = 'Gift/tambah_gift';
 
-// Galeri
-$route['Galeri'] = 'Galeri/index';
+// // Galeri
+// $route['Galeri'] = 'Galeri/index';
 
-// user
-$route['User'] = 'User/index';
-$route['User'] = 'User/role';
-$route['User'] = 'User/edit';
-$route['User'] = 'User/gantipassword';
+// // user
+// $route['User'] = 'User/index';
+// $route['User'] = 'User/role';
+// $route['User'] = 'User/edit';
+// $route['User'] = 'User/gantipassword';
 
-// akad
-$route['Akad'] = 'Akad/index';
+// // akad
+// $route['Akad'] = 'Akad/index';
 
-// menu
-$route['Menu'] = 'Menu/index';
+// // menu & submenu
+// $route['Menu'] = 'Menu/index';
+// $route['Menu/submenu'] = 'Menu/submenu';

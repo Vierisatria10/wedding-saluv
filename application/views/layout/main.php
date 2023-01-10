@@ -169,16 +169,41 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
+		 <!-- Query menu -->
+		 
+		 <?php
+			$role_id = $this->session->userdata('role_id');
+			$queryMenu = "SELECT `user_menu`.`id`, `menu`
+						FROM `user_menu` JOIN `user_access_menu` 
+						ON `user_menu`.`id` = `user_access_menu`.`menu_id`
+						WHERE `user_access_menu`.`role_id` = $role_id 
+						ORDER BY `user_access_menu`.`menu_id` ASC
+						";
+			$menu = $this->db->query($queryMenu)->result_array();
+    	?>
         <div class="dlabnav">
+			<?php foreach ($menu as $m) : ?>
+				<?= $m['menu']; ?>
             <div class="dlabnav-scroll">
-				<ul class="metismenu" id="menu">
-                    <li class=""><a href="<?= base_url('Dashboard') ?>" class="" aria-expanded="false">
-							<i class="fas fa-home"></i>
-							<span class="nav-text">Dashboard</span>
+			<?php
+				$menuId = $m['id'];
+				$querySubMenu = "SELECT *
+						FROM `user_sub_menu` JOIN `user_menu` 
+						ON `user_sub_menu`.`menu_id` = `user_menu`.`id`
+						WHERE `user_sub_menu`.`menu_id` = $menuId  
+						AND `user_sub_menu`.`is_active` = 1
+						";
+				$subMenu = $this->db->query($querySubMenu)->result_array();
+        	?>
+				<ul class="" id="menu">
+					<?php foreach ($subMenu as $sm) : ?>
+                    <li class=""><a href="<?= $sm['url'] ?>" class="" aria-expanded="false">
+							<i class="<?= $sm['icon'] ?>"></i>
+							<span class="nav-text"><?= $sm['title'] ?></span>
 						</a>
 					</li>
-                    
-                    <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+					<?php endforeach; ?>
+                    <!-- <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
 							<i class="fas fa-heart"></i>
 							<span class="nav-text">Mempelai</span>
 						</a>
@@ -220,7 +245,7 @@
 						</a>
                     </li>
                    
-                    <li><a class="" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="<?= base_url('Quotes') ?>" aria-expanded="false">
 							<i class="fas fa-file-alt"></i>
 							<span class="nav-text">Quotes</span>
 						</a>
@@ -246,10 +271,11 @@
                             <li><a href="<?= base_url('Menu') ?>">Menu</a></li>
                             <li><a href="<?= base_url('Menu/submenu') ?>">Sub Menu</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
 				
 			</div>
+			<?php endforeach; ?>
         </div>
         <!--**********************************
             Sidebar end

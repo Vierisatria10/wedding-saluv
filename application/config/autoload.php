@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('form_validation', 'Template', 'database', 'session');
+$autoload['libraries'] = array('form_validation', 'Template', 'email', 'database', 'session');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'file', 'form', 'html', 'download', 'wedding_helper');
+$autoload['helper'] = array('url', 'file', 'form', 'html', 'download', 'wedding', 'security');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('GiftModel', 'GaleriModel', 'RSVPModel', 'AkadModel', 'UserModel', 'MenuModel');
+$autoload['model'] = array('GiftModel', 'GaleriModel', 'RSVPModel', 'AkadModel', 'UserModel', 'MempelaiModel', 'MenuModel');

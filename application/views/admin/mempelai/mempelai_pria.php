@@ -7,7 +7,7 @@
 					</ol>
                 </div>
                 <!-- row -->
-
+                <?= $this->session->flashdata('pesan'); ?>
                 <div class="row">
 					<div class="col-12">
                         <div class="card">
@@ -16,7 +16,8 @@
                             </div>
                             <br>
                             <div class="d-flex me-4 justify-content-end">
-                                    <a href="<?= base_url('Mempelai/tambah_gift') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Gift</a>
+
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#mempelaipriaModal" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Mempelai</button>
                             </div>
                             <div class="card-body">
                                 
@@ -26,8 +27,9 @@
                                             <tr>
                                                 <th>No</th>
                                                 <th>Nama</th>
-                                                <th>Judul</th>
-                                                <th>Sosmed</th>
+                                                <th>Save The Date</th>
+                                                <th>Tanggal</th>
+                                                <th>Alamat</th>
                                                 <th>Foto</th>
                                                 <th>Action</th>
                                             </tr>
@@ -35,20 +37,21 @@
                                         <tbody>
                                             <?php 
                                             $no = 1;
-                                                foreach ($mempelai as $key => $value) {
+                                                foreach ($mempelai as $pria) {
                                             ?>
                                             <tr>
                                                 <td><?= $no++; ?></td>
-                                                <td><?= $value->nama ?></td>
-                                                <td><?= $value->title ?></td>
-                                                <th>Sosmed</th>
+                                                <td><?= $pria['nama'] ?></td>
+                                                <td><?= $pria['save_the_date'] ?></td>
+                                                <td><?= $pria['tanggal'] ?></td>
+                                                <td><?= $pria['alamat'] ?></td>
                                                 <td>
-                                                    <img src="<?= base_url('upload/mempelai/'.$value->foto) ?>" class="rounded-circle" width="100px" alt="">
+                                                    <img src="<?= base_url('upload/mempelai/'.$pria['image']) ?>" class="rounded-circle" width="100px" alt="">
                                                 </td>
                                                 <td>
 													<div class="d-flex">
 														<a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="<?= base_url('Mempelai/delete_pria/' . $pria['id']) ?>" onclick="return confirm('Apakah yakin anda ingin menghapus data ini?')" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
 													</div>												
 												</td>												
                                             </tr>
@@ -63,6 +66,64 @@
 				</div>
             </div>
 
+<!-- Modal tambah gift -->
+<div class="modal fade" id="mempelaipriaModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tambah Mempelai Pria</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <form action="<?= base_url('Mempelai') ?>" method="POST" enctype="multipart/form-data">
+            <div class="modal-body">
+                
+                    
+                        <div class="form-group mb-3">
+                            <label for="" class="col-lg-4 col-form-label">Nama
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama">
+                            <?php echo form_error('nama', '<small class="text-danger ">*', '</small>') ?>
+                        </div>
+                    
+                    
+                        <div class="form-group mb-3">
+                            <label for="" class="col-lg-4 col-form-label">Save The Date
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" name="save_the_date" id="save_the_date" class="form-control" placeholder="Save The Date">
+                            <?php echo form_error('save_the_date', '<small class="text-danger ">*', '</small>') ?>
+                        </div>
+                   
+                <div class="form-group mb-3">
+                    <label for="" class="col-lg-4 col-form-label">Tanggal
+                        <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" name="tanggal" id="tanggal" class="form-control" placeholder="Tanggal">
+                    <?php echo form_error('tanggal', '<small class="text-danger ">*', '</small>') ?>
+                </div>
+              
+                <div class="form-group mb-3">
+                    <label for="" class="col-lg-4 col-form-label">Alamat
+                        <span class="text-danger">*</span>
+                    </label>
+                    <textarea class="form-control" name="alamat" id="alamat" rows="5" placeholder="Alamat" required=""></textarea>
+                    <?php echo form_error('alamat', '<small class="text-danger ">*', '</small>') ?>
+                </div>
+                <div class="custom-file mb-3">
+                    <label for="image" class="col-lg-4 col-form-label">Pilih Gambar</label>
+                    <input type="file" class="form-control" id="image" name="image">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+        </form>
+        </div>
+    </div
+</div>
 <!-- Sweet Alert -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <?php if ($this->session->flashdata('success')) : ?>

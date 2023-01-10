@@ -144,11 +144,32 @@ class User extends CI_Controller {
         $data['breadcrumb'] = 'Akses Role';
         $data['rsvp_count'] = $this->RSVPModel->count_data();
         $data['rsvp']	    = $this->RSVPModel->show();
+
         $data['role']       = $this->db->get_where('user_role', ['id' => $role_id])->row_array();
-        // $this->db->where('id !=', 1);
+        $this->db->where('id !=', 1);
 		$data['user']       = $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array();
-        $data['menu']       = $this->MenuModel->get_data();
+        $data['menu'] = $this->db->get('user_menu')->result_array();
 
         $this->template->load('layout/main', 'user/akses_role', $data);
+    }
+
+    public function changeAccess()
+    {
+        $menu_id = $this->input->post('menuId');
+        $role_id = $this->input->post('roleId');
+
+        $data = [
+            'role_id' => $role_id,
+            'menu_id' => $menu_id
+        ];
+
+        $result = $this->db->get_where('user_access_menu', $data);
+        if ($result->num_rows() < 1) {
+            $this->db->insert('user_access_menu', $data);
+        } else {
+            $this->db->delete('user_access_menu', $data);
+        }
+        $this->session->set_flashdata('pesan', '<div class="alert alert-primary" role="alert">
+        Akses telah dirubah !! </div>');
     }
 }
