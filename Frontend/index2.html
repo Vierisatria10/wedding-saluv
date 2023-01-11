@@ -9,9 +9,9 @@
     <!-- main css -->
     <link rel="stylesheet" href="./main.css">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/aos.css">
+    <!-- <link rel="stylesheet" href="./assets/css/aos.css"> -->
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
@@ -32,7 +32,7 @@
 
     <title>Saluv Wedding</title>
   </head>
-  <body style="height: 519px;">
+  <body style="position: relative; height: 519px;">
     <script>
         function music()
         {
@@ -68,24 +68,24 @@
             <p>Akan segera melangsungkan pernikahan suci</p>
             <h5 class="mb-0">Rabu, 25 Maret 2024</h5>
             
-            <!-- <div id="timer" class="flex-wrap d-flex justify-content-center mt-3">
+            <div id="timer" class="flex-wrap d-flex justify-content-center mt-3">
                 <div data-aos="zoom-in-up" data-aos-duration="400" id="days" class="shadow-lg align-items-center flex-column d-flex justify-content-center">days</div>
                 <div data-aos="zoom-in-up" data-aos-duration="600" id="hours" class="shadow-lg align-items-center flex-column d-flex justify-content-center">hours</div>
                 <div data-aos="zoom-in-up" data-aos-duration="800" id="minutes" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
                 <div data-aos="zoom-in-up" data-aos-duration="1000" id="seconds" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
-            </div> -->
+            </div>
             <br>
             <br>
             <div class="btn-undangan">
-                <a href="#mempelai" onclick="music();" class="btn btn-primary mt-3">Buka Undangan</a>
+                <a href="#mempelai" onclick="music();" class="btn btn-primary mt-3"><i class="fas fa-envelope"></i> Buka Undangan</a>
             </div>
         </div>
         <!-- Bottom Navbar -->
         <nav class="navbar fixed-bottom navbar-dark bg-white d-lg-none d-xl-none d-md-none navbar-expand" style="border-color: #bc3669; border-radius: 20px;">
             <ul class="navbar-nav nav-justified w-100">
               <li class="nav-item">
-                <a href="#" class="nav-link text-black-50">
-                   <img src="./img/icon/home.png" alt="Home" width="25">
+                <a href="#mempelai" class="nav-link text-black-50">
+                   <img src="./img/icon/wedding-rings.png" alt="Home" width="25">
                 </a>
               </li>
               <li class="nav-item">
@@ -126,22 +126,22 @@
                         <div class="p-4 card-pengantin">
                             <div align="center"></div>
                             <div class="my-4 h6">Pengantin Wanita</div>
-                            <h2 class="">Renita Dwika Sari</h2>
+                            <img src="./galleries/2797-gallery-1643189542.jpg" width="100" class="img-fluid border-dark radius-10" alt="">
+                            <h2 class="mt-3">Renita Dwika Sari</h2>
                             <div class="small mt-3">Putri Pertama dari Bapak</div>
                             <div class="small">Udin S</div>
-                            <p></p>
-                            <p></p>
+                            <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-4 card-pengantin">
                             <div align="center"></div>
                             <div class="my-4 h6">Pengantin Pria</div>
-                            <h2 class="">Vieri Satria Ardiansyah</h2>
+                            <img src="./galleries/2797-gallery-1643189542.jpg" width="100" class="img-fluid border-dark radius-10" alt="">
+                            <h2 class="mt-3">Vieri Satria Ardiansyah</h2>
                             <div class="small mt-3">Putra Pertama dari Bapak</div>
                             <div class="small">Hardi Suhardiman</div>
-                            <p></p>
-                            <p></p>
+                            <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                             <h5 class="mb-0">08:00 - Selesai</h5>
                             <div>Jumat, 17 April 2020</div>
                             <p class="mt-4">Aula Masjid Nurul Ilmi - Talaga Bestari Tangerang</p>
-                            <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar mr-2"></i> Add To Calendar</a></p>
+                            <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar-alt mr-2"></i> Add To Calendar</a></p>
                             <div align="center">
                                 <img src="./img/ornaments.png" alt="assets/img/ornaments.png">
                             </div>
@@ -237,7 +237,7 @@
                             <h5 class="mb-0">10:00 - Selesai</h5>
                             <div>Sabtu, 18 April 2020</div>
                             <p class="mt-4">Perumahan Mulya Asri - Rajeg, Ps. Kemis Tangerang</p>
-                            <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar mr-2"></i> Add To Calendar</a></p>
+                            <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar-alt mr-2"></i> Add To Calendar</a></p>
                             <div align="center">
                                 <img src="./img/ornaments.png" alt="assets/img/ornaments.png">
                             </div>
@@ -258,7 +258,7 @@
                 </div>
                 <h1>Peta Lokasi</h1>
                 <p>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di</p>
-                <a href="http://maps.google.com/maps?q=-6.886518900000008,107.53815278219912" class="btn btn-primary" target="_blank">Google Maps</a>
+                <a href="http://maps.google.com/maps?q=-6.886518900000008,107.53815278219912" class="btn btn-primary" target="_blank"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
             </div>
         </div>
 
@@ -309,7 +309,7 @@
                 <div class="col-lg-7 col-md-8">
                     <div class="p-3 bg-white text-center radius-10">
                         <p class="text-center">Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kirimkadoModal">Kirim Amplop Undangan</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kirimkadoModal"><i class="fas fa-location-arrow"></i> Kirim Amplop Undangan</button>
                         <!-- <p>
                             <p>Untuk mengirimkan Kado Nikah kepada kami, silahkan kirimkan melalui <strong>Saweria </strong>kami. Atau melalui Nomor Rekening 
                             <span onclick="copyTeks()" id="dataCopy"><strong>Bank Mandiri 1320006284864</strong></span> </p>
@@ -375,7 +375,7 @@
             <img src="./img/aksen.png" class="img-fluid" width="100" alt="./img/aksen.png">
           </div>
           <h1 class="text-center mb-4">Video</h1>
-            <p class="text-center">Sudi sejenak melihat kebahagiaan kami melalui video dibawah ini
+            <p class="text-center">Sudi sejenak melihat kebahagiaan kami melalui video ini
             <div class="container text-center mt-5 d-flex justify-content-center">
               <div class="col-lg-7 col-md-8">
                  <div class="p-3 bg-white text-center radius-10">
@@ -399,18 +399,55 @@
         <div class="row">
            <br clear="all"> <br clear="all">
           <div class="col-md-12 col-md-offset-2 text-center fh5co-heading animate-box">
-            <br><h1>Protokol Kesehatan</h1>
-            <p>Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke Akad maupun resepsi pernikahan kami untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</p>
+            <h1>Protokol Kesehatan</h1>
+            <p align="justify">Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke Akad maupun resepsi pernikahan kami untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, 
+                Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</p>
           </div>
-          <img class="img-fluid radius-10" src="./img/covid-prokes.jpg" alt="400">
         </div>
-          
+            <div align="center">
+                <img class="img-fluid radius-10" src="./img/covid-prokes.jpg" alt="" width="400">
+            </div>
         </div>
       </div>
     </section>
+
+    <!-- buku tamu -->
+    <section class="py-5 hidden" id="doa">
+        <div class="container">
+            <div class="mb-3" align="center">
+                <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <div class="col-md-8">
+                    <h1 class="text-center mb-4">Doa & Ucapan</h1>
+                </div>
+            </div>
+            <div class="container text-center d-flex justify-content-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="p-3 bg-white text-center radius-10">
+                        <div class="card ml-3">
+                            <div class="overflow-auto">
+                                <div align="left" class="mr-3">
+                                    <img src="./img/icon/info.png" alt="" width="50">
+                                </div>
+                                <p>Bismi</p>
+                                <small class="text-muted">1 tahun yang lalu</small>
+                             </div>
+                        </div>
+                       
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kirimkadoModal"><i class="fas fa-location-arrow"></i> Kirim Doa</button>
+                        <!-- <p>
+                            <p>Untuk mengirimkan Kado Nikah kepada kami, silahkan kirimkan melalui <strong>Saweria </strong>kami. Atau melalui Nomor Rekening 
+                            <span onclick="copyTeks()" id="dataCopy"><strong>Bank Mandiri 1320006284864</strong></span> </p>
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- mute music -->
-    <div class="mute shadow px-3 py-2" style="border-radius: 20px; color: black; background-color: white;" id="mute" onClick="mute();"><i class="fas fa-volume-up"></i></div>
+    <div class="mute shadow px-3 py-2" style="border-radius: 20px; color: black; background-color: white;" id="mute" onClick="mute();"><img src="./img/music/music.png" width="25" alt=""></div>
     <script>
         function mute()
         {
@@ -420,11 +457,11 @@
         var mute = document.getElementById("mute");
         if(myAudio.muted == true) {
             myAudio.muted = false;
-            mute.innerHTML = '<i class="fas fa-volume-up"></i>';
+            mute.innerHTML = '<img src="./img/music/music.png" width="25" alt="">';
         }
             else if(myAudio.muted == false) {
             myAudio.muted = true;
-            mute.innerHTML = '<i class="fas fa-volume-slash"></i>';
+            mute.innerHTML = '<img src="./img/music/music-slash.png" width="25" alt="">';
         }
         }
     </script>
@@ -438,7 +475,7 @@
 
     <script type="text/javascript">
         function makeTimer() {
-        var endTime = new Date("17 August 2022 12:00:00");
+        var endTime = new Date("25 Maret 2024 12:00:00");
         var endTime = (Date.parse(endTime)) / 1000;
         var now = new Date();
         var now = (Date.parse(now) / 1000);
@@ -488,6 +525,5 @@
 
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    
   </body>
 </html>
