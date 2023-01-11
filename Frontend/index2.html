@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Website ini merupakan website Pernikahan  Adi Sumaryadi dan Siti Salamah Azzahra yang akan segera melakukan resepsi pernikahan. Silahkan berikan doa dan harapan untuk kami berdua" />
     <meta name="keywords" content="Pernikahan Adi Sumaryadi, Pernikahan Siti Salamah Azzahra, Iis, Webnikah, Nikah Online Undangan Online" />
@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/aos.css">
-    <link rel="stylesheet" href="./assets/css/css-owl.carousel.css">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
-    
+
     <meta name="language" content="in,en" />
     <meta name="distribution" content="Global" />
     <meta name="rating" content="General" />
@@ -62,19 +60,20 @@
           </div>    
 
         <div class="container text-center">
+            
             <div align="center">
-                <img src="./img/aksen.png" class="img-fluid" alt="foto" width="100">
+                <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
             </div>
             <h1 class="mb-0 mt-4">Vieri & Rere</h1>
-            <div class="my-4">Akan segera melangsungkan pernikahan suci</div>
+            <p>Akan segera melangsungkan pernikahan suci</p>
             <h5 class="mb-0">Rabu, 25 Maret 2024</h5>
             
-            <div id="timer" class="flex-wrap d-flex justify-content-center mt-4">
-                <div data-aos="zoom-in-up" data-aos-duration="400" id="days" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
-                <div data-aos="zoom-in-up" data-aos-duration="600" id="hours" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
+            <!-- <div id="timer" class="flex-wrap d-flex justify-content-center mt-3">
+                <div data-aos="zoom-in-up" data-aos-duration="400" id="days" class="shadow-lg align-items-center flex-column d-flex justify-content-center">days</div>
+                <div data-aos="zoom-in-up" data-aos-duration="600" id="hours" class="shadow-lg align-items-center flex-column d-flex justify-content-center">hours</div>
                 <div data-aos="zoom-in-up" data-aos-duration="800" id="minutes" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
                 <div data-aos="zoom-in-up" data-aos-duration="1000" id="seconds" class="shadow-lg align-items-center flex-column d-flex justify-content-center"></div>
-            </div>
+            </div> -->
             <br>
             <br>
             <div class="btn-undangan">
@@ -113,7 +112,7 @@
     <section class="py-5 hidden" id="mempelai">
         <div class="container text-center mt-5 d-flex justify-content-center">
             <div class="col-lg-6 col-md-6">
-                <h1>Assalamu'alaikum Warahmatullah</h1>
+                <img src="./img/background/bismillah-removebg-preview.png" alt="bismillah" width="300">
                 <p>Dengan Rahmat Allah yang Maha Kuasa InsyaAllah kami akan melangsungkan pernikahan pada:</p>
                 <h5>Rabu, 17 Agustus 2022 </h5>
                 <p>di Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi</p>
@@ -252,7 +251,7 @@
 
     <!-- peta lokasi -->
     <section id="peta" class="hero-section-3 py-5 hidden">
-        <div class="container text-center mt-5 d-flex justify-content-center">
+        <div class="container text-center mt-3 d-flex justify-content-center">
             <div class="col-lg-6 col-md-8">
                 <div class="mb-3" align="center">
                     <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
@@ -287,6 +286,11 @@
                 <p>Photo-photo kebahagian kami yang kami kenang selalu.</p>
             </div>
         </div>
+        <div class="container mt-5">
+            <div class="owl-carousel">
+
+            </div>
+        </div>
     </section>
     <!-- end galleri -->
 
@@ -299,20 +303,110 @@
             <div class="d-flex justify-content-center mb-4">
                 <div class="col-md-8">
                     <h1 class="text-center mb-4">Kirim Kado</h1>
-                    <p class="text-center">Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.</p>
                 </div>
             </div>
             <div class="container text-center d-flex justify-content-center">
                 <div class="col-lg-7 col-md-8">
                     <div class="p-3 bg-white text-center radius-10">
-                        <p>
+                        <p class="text-center">Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima kasih.</p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#kirimkadoModal">Kirim Amplop Undangan</button>
+                        <!-- <p>
                             <p>Untuk mengirimkan Kado Nikah kepada kami, silahkan kirimkan melalui <strong>Saweria </strong>kami. Atau melalui Nomor Rekening 
                             <span onclick="copyTeks()" id="dataCopy"><strong>Bank Mandiri 1320006284864</strong></span> </p>
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- modal kirim kado -->
+    <div class="modal fade" id="kirimkadoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Amplop Undangan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="POST">
+                <div class="form-group">
+                    <label for="">Nama Pengirim</label>
+                    <input type="text" class="form-control" name="nama" placeholder="Nama Pengirim...">
+                </div>
+                <div class="form-group">
+                    <label for="">Email Pengirim</label>
+                    <input type="email" class="form-control" name="email" placeholder="Email Pengirim...">
+                </div>
+                <div class="form-group">
+                    <label for="">Pesan Singkat</label>
+                    <textarea name="pesan" id="" class="form-control" placeholder="Pesan Singkat"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">Nominal Amplop</label>
+                    <input type="number" class="form-control" name="nominal" placeholder="Nominal Amplop">
+                    <small class="text-black"><small class="text-danger">*</small> Nominal amplop akan ditambahkan Rp. 5.000 untuk biaya transfer secara otomatis</small>
+                </div>
+                <div class="form-group">
+                    <label for="">Metode Pengiriman</label>
+                    <select name="pengiriman" class="form-control" id="">
+                        <option value="OVO">OVO A.n Vieri (0895336769180)</option>
+                        <option value="DANA">DANA A.n </option>
+                        <option value="SHOPEEPAY">SHOPEEPAY</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer text-center d-flex justify-content-center">
+                <div align="center" class="radius-10">
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Sekarang</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <!-- video -->
+    <section class="hidden hero-section-4 py-5">
+        <div class="container">
+          <div align="center" class="mb-3">
+            <img src="./img/aksen.png" class="img-fluid" width="100" alt="./img/aksen.png">
+          </div>
+          <h1 class="text-center mb-4">Video</h1>
+            <p class="text-center">Sudi sejenak melihat kebahagiaan kami melalui video dibawah ini
+            <div class="container text-center mt-5 d-flex justify-content-center">
+              <div class="col-lg-7 col-md-8">
+                 <div class="p-3 bg-white text-center radius-10">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="420" src="https://www.youtube.com/embed/hE-1XnJs61w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- protokol kesehatan -->
+    <section class="hidden hero-section-4 py-5" id="protokol">
+        <div align="center" class="mb-3">
+          <img src="./img/aksen.png" class="img-fluid" width="100" alt="assets/img/aksen.png">
+        </div>
+      <div class="fh5co-section-gray">
+      <div class="container">
+        <div class="row">
+           <br clear="all"> <br clear="all">
+          <div class="col-md-12 col-md-offset-2 text-center fh5co-heading animate-box">
+            <br><h1>Protokol Kesehatan</h1>
+            <p>Mohon untuk anda sahabat/kerabat dan saudara kami yang akan datang ke Akad maupun resepsi pernikahan kami untuk tetap memperhatikan protokol kesehatan yaitu Menggunakan Masker, Menjaga Jarak, Mencuci Tangan dan selalu menjaga kesehatan dan juga imun tubuh. Terima kasih</p>
+          </div>
+          <img class="img-fluid radius-10" src="./img/covid-prokes.jpg" alt="400">
+        </div>
+          
+        </div>
+      </div>
     </section>
     
     <!-- mute music -->
@@ -344,7 +438,7 @@
 
     <script type="text/javascript">
         function makeTimer() {
-        var endTime = new Date("09 Januari 2023 15:58:00").getTime();
+        var endTime = new Date("17 August 2022 12:00:00");
         var endTime = (Date.parse(endTime)) / 1000;
         var now = new Date();
         var now = (Date.parse(now) / 1000);
@@ -393,5 +487,7 @@
     </script>
 
     <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
