@@ -8,6 +8,11 @@ class GaleriModel extends CI_Model
         return $this->db->get('galeri')->result_array();
     }
 
+    public function get_data()
+    {
+        return $this->db->get('galeri')->result_array();
+    }
+
     public function cekData()
     {
         $this->db->limit(1);

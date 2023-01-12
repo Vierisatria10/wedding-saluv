@@ -335,3 +335,13 @@ footer a{
       text-align: center;
       font-style: normal !important;
     }
+
+.animate__animated .animate__fadeInLeftBig {
+	--animate-duration: 100s;
+	--animate-delay: 1s;
+}
+
+.animate__animated .animate__fadeInRightBig {
+	--animate-duration: 100s;
+	--animate-delay: 1s;
+}

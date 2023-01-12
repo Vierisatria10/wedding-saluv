@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['app_name'] = 'WEDDING SALUV';
 
-$config['base_url'] = 'http://localhost/wedding_saluv/';
+$config['base_url'] = 'http://localhost/wedding-saluv/';
 
 /*
 |--------------------------------------------------------------------------

@@ -35,6 +35,12 @@
                                     </div>
 
                                     <div class="form-group mb-3">
+                                        <label for="">Tanggal</label>
+                                        <input type="text" class="form-control form-control-user" id="tanggal" name="tanggal" value="<?= $akad['tanggal']; ?>">
+                                        <?= form_error('tanggal', '<small class="text-danger pl-3">', '</small>'); ?>
+                                    </div>
+
+                                    <div class="form-group mb-3">
                                         <label for="">Alamat</label>
                                         <textarea name="alamat" id="alamat" style="height: 100%;" class="form-control">
                                             <?= $akad['alamat']; ?>

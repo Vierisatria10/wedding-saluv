@@ -7,18 +7,18 @@
     <meta name="description" content="Website ini merupakan website Pernikahan  Adi Sumaryadi dan Siti Salamah Azzahra yang akan segera melakukan resepsi pernikahan. Silahkan berikan doa dan harapan untuk kami berdua" />
     <meta name="keywords" content="Pernikahan Adi Sumaryadi, Pernikahan Siti Salamah Azzahra, Iis, Webnikah, Nikah Online Undangan Online" />
     <!-- main css -->
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="<?= base_url('Frontend/main.css') ?>">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="<?= base_url('Frontend/fontawesome/css/all.min.css') ?>">
     <!-- owl carousel -->
-    <link rel="stylesheet" href="./owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url('Frontend/owlcarousel/css/owl.carousel.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('Frontend/owlcarousel/css/owl.theme.default.min.css') ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- css -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <script src="./assets/js/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" href="<?= base_url('Frontend/assets/css/bootstrap.min.css') ?>">
+    <script src="<?= base_url('Frontend/assets/js/jquery-3.5.1.slim.min.js') ?>"></script>
 
     <meta name="language" content="in,en" />
     <meta name="distribution" content="Global" />
@@ -53,20 +53,20 @@
         }
         
         </script>
-        <audio id="audio" style="width:0px; height:0px;"><source src="./musics/Music1.mp3" type="audio/mpeg"></audio>
-    <section class="py-5 hero-1" id="intro" style="background-image: url('./img/gambar1.jpg');">
+        <audio id="audio" style="width:0px; height:0px;"><source src="<?= base_url('Frontend/musics/Music1.mp3') ?>" type="audio/mpeg"></audio>
+    <section class="py-5 hero-1" id="intro" style="background-image: url('<?= base_url('Frontend/img/gambar1.jpg') ?>');">
     
         <div>
-            <img src="./img/ataskiri.png" class="img-fluid w-25 top_l">
-            <img src="./img/ataskanan.png" class="img-fluid w-25 top_r">
-            <img src="./img/kiribawah.png" class="img-fluid w-25 bottom_l">
-            <img src="./img/kananbawah.png" class="img-fluid w-25 bottom_r">
+            <img src="<?= base_url('Frontend/img/ataskiri.png') ?>" class="img-fluid w-25 top_l">
+            <img src="<?= base_url('Frontend/img/ataskanan.png') ?>" class="img-fluid w-25 top_r">
+            <img src="<?= base_url('Frontend/img/kiribawah.png') ?>" class="img-fluid w-25 bottom_l">
+            <img src="<?= base_url('Frontend/img/kananbawah.png') ?>" class="img-fluid w-25 bottom_r">
           </div>    
 
         <div class="container text-center">
             
             <div align="center">
-                <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+                <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="" class="img-fluid" width="100">
             </div>
             <h1 class="mb-0 mt-4">Vieri & Rere</h1>
             <p>Akan segera melangsungkan pernikahan suci</p>
@@ -89,17 +89,17 @@
             <ul class="navbar-nav nav-justified w-100">
               <li class="nav-item">
                 <a href="#mempelai" class="nav-link text-black-50">
-                   <img src="./img/icon/wedding-rings.png" alt="Home" width="25">
+                   <img src="<?= base_url('Frontend/img/icon/wedding-rings.png') ?>" alt="Home" width="25">
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link text-black-50">
-                    <img src="./img/icon/img-date.png" alt="Tanggal" width="25">
+                    <img src="<?= base_url('Frontend/img/icon/img-date.png') ?>" alt="Tanggal" width="25">
                 </a>
               </li>
               <li class="nav-item">
                 <a href="#galeri" class="nav-link">
-                    <img src="./img/icon/photography.png" alt="Galeri" width="25">
+                    <img src="<?= base_url('Frontend/img/icon/photography.png') ?>" alt="Galeri" width="25">
                 </a>
               </li>
               <li class="nav-item">
@@ -116,7 +116,7 @@
     <section class="py-5 hidden" id="mempelai">
         <div class="container text-center mt-5 d-flex justify-content-center">
             <div class="col-lg-6 col-md-6">
-                <img src="./img/background/bismillah-removebg-preview.png" alt="bismillah" width="300">
+                <img src="<?= base_url('Frontend/img/background/bismillah-removebg-preview.png') ?>" alt="bismillah" width="300">
                 <p>Dengan Rahmat Allah yang Maha Kuasa InsyaAllah kami akan melangsungkan pernikahan pada:</p>
                 <h5>Rabu, 17 Agustus 2022 </h5>
                 <p>di Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi</p>
@@ -130,7 +130,7 @@
                         <div class="p-4 card-pengantin animate__animated animate__fadeInLeftBig animate__delay-3s">
                             <div align="center"></div>
                             <div class="my-4 h6">Pengantin Wanita</div>
-                            <img src="./galleries/2797-gallery-1643374824.jpg" width="100" class="img-fluid border-dark rounded radius-10" alt="">
+                            <img src="<?= base_url('Frontend/galleries/2797-gallery-1643374824.jpg') ?>" width="100" class="img-fluid border-dark rounded radius-10" alt="">
                             <h2 class="mt-3">Renita Dwika Sari S.E</h2>
                             <div class="small mt-3">Putri Pertama dari Bapak Udin S</div>
                             <div class="small">&</div>
@@ -141,13 +141,17 @@
                     <div class="col-lg-6 mb-lg-0">
                         <div class="p-4 card-pengantin animate__animated animate__fadeInRightBig animate__delay-3s">
                             <div align="center"></div>
-                            <div class="my-4 h6">Pengantin Pria</div>
-                            <img src="./galleries/2797-gallery-1643374829.jpg" width="100" class="img-fluid border-dark rounded radius-10" alt="">
-                            <h2 class="mt-3">Vieri Satria Ardiansyah S.Kom</h2> 
-                            <div class="small mt-3">Putra Pertama dari Bapak Hardi Suhardiman</div>
-                            <div class="small">&</div>
-                            <div class="small">Ibu Sunarti</div>
+                            <div class="my-4 h6"><?= $pengantin_pria; ?></div>
+                            <?php foreach($mempelai as $mp) : ?>
+                            <img src="<?= base_url('upload/mempelai/'. $mp['image']) ?>" width="100" class="img-fluid border-dark rounded-circle radius-10" alt="">
+                            <h2 class="mt-3"><?= $mp['nama'] ?></h2>
+                            <div class="small text-bold"><?= $mp['tanggal'] ?></div> 
+                            <div class="small mt-3"><?= $mp['text1'] ?></div>
+                            <div class="small"><?= $mp['tex2'] ?></div>
+                            <div class="small"><?= $mp['text3'] ?></div>
                             <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <hr class="my-4">
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
@@ -157,10 +161,10 @@
 
     <!-- cerita kita -->
     <section class="py-5 hidden" id="cerita">
-        <div class="container text-center mt-5 d-flex justify-content-center">
+        <div class="container text-center mt-4 d-flex justify-content-center">
             <div class="col-lg-6 col-md-8">
                 <div class="mb-3" align="center">
-                    <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+                    <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="" class="img-fluid" width="100">
                 </div>
                 <h1>Cerita Kita</h1>
             </div>
@@ -222,21 +226,23 @@
         <div class="container text-center mt-5 d-flex justify-content-center">
             <div class="col-lg-9 col-md-8">
                 <div class="row">
+                    <?php foreach($akad as $ak) : ?>
                     <div class="col-lg-6 mb-4">
                         <div class="card-undangan p-4 bg-white text-center radius-10 animate__animated animate__fadeInUp animate__delay-5s">
-                            <h6 class="mb-0">Akad Nikah</h6>
+                            <h6 class="mb-0"><?= $ak['judul'] ?></h6>
                             <hr class="my-4">
-                            <h5 class="mb-0">08:00 - Selesai</h5>
-                            <div>Jumat, 17 April 2020</div>
-                            <p class="mt-4">Aula Masjid Nurul Ilmi - Talaga Bestari Tangerang</p>
+                            <h5 class="mb-0"><?= $ak['jam'] ?> - Selesai</h5>
+                            <div><?= $ak['tanggal'] ?></div>
+                            <p class="mt-4"><?= $ak['alamat'] ?></p>
                             <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar-alt mr-2"></i> Add To Calendar</a></p>
                             <div align="center">
-                                <img src="./img/ornaments.png" alt="assets/img/ornaments.png">
+                                <img src="<?= base_url('Frontend/img/ornaments.png') ?>" alt="assets/img/ornaments.png">
                             </div>
                         </div>
                     </div>
+                    <?php endforeach; ?>
 
-                    <div class="col-lg-6 mb-4">
+                    <!-- <div class="col-lg-6 mb-4">
                         <div class="card-undangan p-4 bg-white text-center radius-10">
                             <h6 class="mb-0">Resepsi</h6>
                             <hr class="my-4">
@@ -245,10 +251,10 @@
                             <p class="mt-4">Perumahan Mulya Asri - Rajeg, Ps. Kemis Tangerang</p>
                             <p class="mt-4"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Akad Nikah 1+Adi Sumaryadi&Siti Salamah Azzahra&dates=20220817T120000%2F20220817T235900&location=Aula Masjid ABRI Cimahi - Jalan Gatot Subroto Kota Cimahi" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-calendar-alt mr-2"></i> Add To Calendar</a></p>
                             <div align="center">
-                                <img src="./img/ornaments.png" alt="assets/img/ornaments.png">
+                                <img src="<?= base_url('Frontend/img/ornaments.png') ?>" alt="assets/img/ornaments.png">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -260,7 +266,7 @@
         <div class="container text-center mt-3 d-flex justify-content-center">
             <div class="col-lg-6 col-md-8">
                 <div class="mb-3" align="center">
-                    <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+                    <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="" class="img-fluid" width="100">
                 </div>
                 <h1>Peta Lokasi</h1>
                 <p>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini. Atau anda bisa buka di</p>
@@ -286,7 +292,7 @@
         <div class="container text-center mt-5 d-flex justify-content-center">
             <div class="col-lg-6 col-md-8">
                 <div class="mb-3" align="center">
-                    <img src="./img/aksen.png" alt="aksen" class="img-fluid" width="100">
+                    <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="aksen" class="img-fluid" width="100">
                 </div>
                 <h1>Galeri Foto</h1>
                 <p>Photo-photo kebahagian kami yang kami kenang selalu.</p>
@@ -295,16 +301,16 @@
         <div class="container mt-5">
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img src="./galleries/2797-gallery-1643189542.jpg" class="img-fluid radius-10" alt="galeri 1">
+                    <img src="<?= base_url('Frontend/galleries/2797-gallery-1643189542.jpg') ?>" class="img-fluid radius-10" alt="galeri 1">
                 </div>
                 <div class="item">
-                    <img src="./galleries/2797-gallery-1643190501.jpg" class="img-fluid radius-10" alt="galeri 2">
+                    <img src="<?= base_url('Frontend/galleries/2797-gallery-1643190501.jpg') ?>" class="img-fluid radius-10" alt="galeri 2">
                 </div>
                 <div class="item">
-                    <img src="./galleries/2797-gallery-1643190501.jpg" class="img-fluid radius-10" alt="galeri 3">
+                    <img src="<?= base_url('Frontend/galleries/2797-gallery-1643190501.jpg') ?>" class="img-fluid radius-10" alt="galeri 3">
                 </div>
                 <div class="item">
-                    <img src="./galleries/2797-gallery-1643189542.jpg" class="img-fluid radius-10" alt="galeri 3">
+                    <img src="<?= base_url('Frontend/galleries/2797-gallery-1643189542.jpg') ?>" class="img-fluid radius-10" alt="galeri 3">
                 </div>
             </div>
         </div>
@@ -315,7 +321,7 @@
     <section class="py-5 hidden" id="hadiah">
         <div class="container">
             <div class="mb-3" align="center">
-                <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+                <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="" class="img-fluid" width="100">
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <div class="col-md-8">
@@ -409,7 +415,7 @@
     <!-- protokol kesehatan -->
     <section class="hidden hero-section-4 py-5" id="protokol">
         <div align="center" class="mb-3">
-          <img src="./img/aksen.png" class="img-fluid" width="100" alt="assets/img/aksen.png">
+          <img src="<?= base_url('Frontend/img/aksen.png') ?>" class="img-fluid" width="100" alt="assets/img/aksen.png">
         </div>
       <div class="fh5co-section-gray">
       <div class="container">
@@ -422,7 +428,7 @@
           </div>
         </div>
             <div align="center">
-                <img class="img-fluid radius-10" src="./img/covid-prokes.jpg" alt="" width="400">
+                <img class="img-fluid radius-10" src="<?= base_url('Frontend/img/covid-prokes.jpg') ?>" alt="" width="400">
             </div>
         </div>
       </div>
@@ -432,7 +438,7 @@
     <section class="py-5 hidden" id="doa">
         <div class="container">
             <div class="mb-3" align="center">
-                <img src="./img/aksen.png" alt="" class="img-fluid" width="100">
+                <img src="<?= base_url('Frontend/img/aksen.png') ?>" alt="" class="img-fluid" width="100">
             </div>
             <div class="d-flex justify-content-center mb-4">
                 <div class="col-md-8">
@@ -471,7 +477,7 @@
     </footer>
     
     <!-- mute music -->
-    <div class="mute shadow px-3 py-2" style="border-radius: 20px; color: black; background-color: white;" id="mute" onClick="mute();"><img src="./img/music/music.png" width="25" alt=""></div>
+    <div class="mute shadow px-3 py-2" style="border-radius: 20px; color: black; background-color: white;" id="mute" onClick="mute();"><img src="<?= base_url('Frontend/img/music/music.png') ?>" width="25" alt=""></div>
     <script>
         function mute()
         {
@@ -582,7 +588,7 @@
         
     })
     </script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./owlcarousel/js/owl.carousel.js"></script>
+    <script src="<?= base_url('Frontend/assets/js/bootstrap.bundle.min.js') ?>"></script>
+    <script src="<?= baser_url('Frontend/owlcarousel/js/owl.carousel.js') ?>"></script>
   </body>
 </html>

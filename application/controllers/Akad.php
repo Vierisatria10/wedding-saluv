@@ -21,6 +21,7 @@ class Akad extends CI_Controller {
 
         $this->form_validation->set_rules('judul', 'Judul', 'required');
         $this->form_validation->set_rules('jam', 'Jam', 'required');
+        $this->form_validation->set_rules('tanggal', 'Tanggal', 'required');
         $this->form_validation->set_rules('alamat', 'Alamat', 'required');
         $this->form_validation->set_rules('no_hp', 'Nomor HP', 'required');
         $this->form_validation->set_rules('link_maps', 'Link Maps', 'required');
@@ -43,12 +44,13 @@ class Akad extends CI_Controller {
                 $gambar      = $gambar['file_name'];
                 $judul       = $this->input->post('judul', true);
                 $jam         = $this->input->post('jam', true);
+                $tanggal       = $this->input->post('tanggal', true);
                 $alamat      = $this->input->post('alamat', true);
                 $no_hp       = $this->input->post('no_hp', true);
                 $link_maps   = $this->input->post('link_maps', true);
 
                 $data = [
-                    'judul'       => $judul,
+                    'tanggal'       => $tanggal,
                     'image'      => $gambar,
                     'jam'         => $jam,
                     'alamat'      => $alamat,
@@ -79,6 +81,7 @@ class Akad extends CI_Controller {
         // berikan rules untuk mengedit nama user
         $this->form_validation->set_rules('judul', 'Judul', 'required');
         $this->form_validation->set_rules('jam', 'Jam', 'required');
+        $this->form_validation->set_rules('tanggal', 'Tanggal', 'required');
         $this->form_validation->set_rules('alamat', 'Alamat', 'required');
         $this->form_validation->set_rules('no_hp', 'Nomor HP', 'required');
         $this->form_validation->set_rules('link_maps', 'Link Maps', 'required');
@@ -91,6 +94,7 @@ class Akad extends CI_Controller {
 
             $judul       = $this->input->post('judul', true);
             $jam         = $this->input->post('jam', true);
+            $tanggal         = $this->input->post('tanggal', true);
             $alamat      = $this->input->post('alamat', true);
             $no_hp       = $this->input->post('no_hp', true);
             $link_maps   = $this->input->post('link_maps', true);
@@ -121,6 +125,7 @@ class Akad extends CI_Controller {
             }
             $this->db->set('judul', $judul);
             $this->db->set('jam', $jam);
+            $this->db->set('tanggal', $tanggal);
             $this->db->set('alamat', $alamat);
             $this->db->set('no_hp', $no_hp);
             $this->db->set('link_maps', $link_maps);

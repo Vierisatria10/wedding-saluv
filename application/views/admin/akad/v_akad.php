@@ -32,7 +32,10 @@
                             <p class="mb-4"><?= $a['judul']; ?> </p>
 
                             <label class="font-weight-bold" for="jam">Jam</label>
-                            <p class="mb-4"><?= $a['jam']; ?> WIB </p>
+                            <p class="mb-4"><?= $a['jam']; ?> WIB - Selesai</p>
+
+                            <label class="font-weight-bold" for="tanggal">Tanggal</label>
+                            <p class="mb-4"><?= $a['tanggal']; ?></p>
 
                             <label class="font-weight-bold" for="alamat">Alamat</label>
                             <p class="mb-4"><?= $a['alamat']; ?> </p>
@@ -71,6 +74,10 @@
                 <div class="form-group mb-2">
                     <label for="">Jam Pelaksanaan</label>
                     <input type="time" class="form-control" id="jam" name="jam" placeholder="Jam Pelaksanaan">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="">Tanggal</label>
+                    <input type="text" class="form-control" id="tanggal" name="tanggal" placeholder="Tanggal">
                 </div>
                 <div class="form-group mb-2">
                     <label for="">Nomor HP</label>
