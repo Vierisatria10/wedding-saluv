@@ -103,7 +103,9 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">Notif</a>
+                <a href="#peta" class="nav-link">
+                    <img src="<?= base_url('Frontend/img/icon/maps.png') ?>" alt="" width="25">
+                </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">Profile</a>
@@ -129,13 +131,17 @@
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="p-4 card-pengantin animate__animated animate__fadeInLeftBig animate__delay-3s">
                             <div align="center"></div>
-                            <div class="my-4 h6">Pengantin Wanita</div>
+                            <div class="my-4 h6"><?= $pengantin_wanita ?></div>
+                            <?php foreach($mempelai_wanita as $mw) : ?>
                             <img src="<?= base_url('Frontend/galleries/2797-gallery-1643374824.jpg') ?>" width="100" class="img-fluid border-dark rounded radius-10" alt="">
-                            <h2 class="mt-3">Renita Dwika Sari S.E</h2>
+                            <h2 class="mt-3"><?= $mw['nama'] ?></h2>
+                            <div class="small text-bold"><?= $mw['tanggal'] ?></div> 
                             <div class="small mt-3">Putri Pertama dari Bapak Udin S</div>
                             <div class="small">&</div>
                             <div class="small">Ibu Erlinda Wati</div>
                             <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
+                            <hr class="my-4">
+                            <?php endforeach; ?>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-lg-0">
@@ -487,14 +493,14 @@
         var mute = document.getElementById("mute");
         if(myAudio.muted == true) {
             myAudio.muted = false;
-            mute.innerHTML = '<img src="./img/music/music.png" width="25" alt="">';
+            mute.innerHTML = '<img src="<?= base_url('Frontend/img/music/music.png') ?>" width="25" alt="">';
         }
             else if(myAudio.muted == false) {
             myAudio.muted = true;
-            mute.innerHTML = '<img src="./img/music/music-slash.png" width="25" alt="">';
+            mute.innerHTML = '<img src="<?= base_url('Frontend/img/music/music-slash.png') ?>" width="25" alt="">';
         }
         }
-    </script>
+    </script> 
 
     <script>
         $("section").hide();

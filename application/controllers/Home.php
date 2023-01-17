@@ -15,6 +15,7 @@ class Home extends CI_Controller {
 	{
         $data['title'] = 'Home - Wedding';
 		$data['pengantin_pria'] = 'Pengantin Pria';
+		$data['pengantin_wanita'] = 'Pengantin Wanita';
 		$data['akad'] = $this->AkadModel->show();
 		$data['galeri'] = $this->GaleriModel->get_data();
 		$data['mempelai'] = $this->MempelaiModel->mempelai_pria();

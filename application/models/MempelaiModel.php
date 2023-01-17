@@ -15,4 +15,14 @@ class MempelaiModel extends CI_Model
     {
         return $this->db->get('mempelai_wanita');
     }
+
+    public function insert_wanita($data)
+    {
+        return $this->db->insert('mempelai_wanita', $data);
+    }
+
+    public function delete_pria($id)
+    {
+        return $this->db->delete('mempelai_pria', ['id' => $id]);
+    }
 }
